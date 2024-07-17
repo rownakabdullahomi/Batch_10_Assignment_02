@@ -85,6 +85,10 @@ font-style: italic;
     font-size: 4.8rem;
 font-weight: 900;
 color: white;
+
+}
+.banner-description{
+    letter-spacing: 0.5px;
 }
 .banner-title span{
     font-family: 'Miama', sans-serif;
@@ -197,11 +201,19 @@ margin-left: 1rem;
         margin-left: 1rem;
         }
         .box-1 {
-            width: 140px;
+            width: 135px;
             height: 74px;
             background-color: aqua;
             position: absolute;
             left: 160px;
             top: 25px;
+        }
+        .box-2 {
+            width: 145px;
+            height: 70px;
+            background-color: aqua;
+            position: absolute;
+            right: 145px;
+            bottom: 203px;
         }
 }
