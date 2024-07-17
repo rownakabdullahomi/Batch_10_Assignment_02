@@ -14,8 +14,7 @@
   
 
 header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(58, 57, 57, 0.596) 100%);
-    
+    background: linear-gradient(0.00deg, rgb(17, 17, 17),rgb(43, 42, 42) 100%);
     
 }
 .navbar, .banner{
@@ -64,6 +63,13 @@ font-style: italic;
     background: rgb(230, 83, 60);
 }
 
+.bars{
+    display: none;
+}
+
+
+
+
 .banner{
     /* border: 2px solid red; */
     display: flex;
@@ -96,20 +102,106 @@ margin-top: 2rem;
     margin-top: 2rem;
 }
 .btn-primary{
-    border-radius: 2.5rem;
+    border-radius: 2.8rem;
 border: none;
 background: rgb(230, 83, 60);
-padding: 16px 40px 16px 40px;
+padding: 1rem 2.5rem;
 color: white;
 }
 
 .btn-download{
 background: none;
-border-radius: 2.5rem;
+border-radius: 2.2rem;
 border: 1px solid rgb(255, 255, 255);
+padding: .94rem 2.5rem;
 margin-left: 1rem;
 }
 .banner-image-container{
+    position: relative;
     margin-top: 3rem;
     margin-right: 1.5rem;
+}
+.banner-image-container img{
+    width: 100%;
+}
+.box-1 {
+    width: 190px;
+    height: 98px;
+    background-color: aqua;
+    position: absolute;
+    left: 218px;
+    top: 140px;
+}
+.box-2 {
+    width: 200px;
+    height: 90px;
+    background-color: aqua;
+    position: absolute;
+    right: 252px;
+    bottom: 72px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .navbar, .banner{
+        width: 90%;
+    }
+    
+    .nav-links{
+        display: none;
+    }
+    .bars{
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .banner{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    }
+    .banner-image-container{
+        margin: auto;
+        margin-top: 3rem;
+
+    }
+    .btn-banner{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-primary {
+        border-radius: 2.8rem;
+        border: none;
+        background: rgb(230, 83, 60);
+        padding: 1rem 1rem;
+        color: white;
+    }
+    .btn-download{
+        background: none;
+        border-radius: 2.2rem;
+        border: 1px solid rgb(255, 255, 255);
+        padding: .94rem 1rem;
+        margin-left: 1rem;
+        }
+        .box-1 {
+            width: 140px;
+            height: 74px;
+            background-color: aqua;
+            position: absolute;
+            left: 160px;
+            top: 25px;
+        }
 }
