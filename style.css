@@ -7,11 +7,23 @@
     font-family: "Inter", sans-serif;
 }
 
+@font-face {
+    font-family: 'Miama'; /* Name your font family */
+    src: url('Miama.ttf'); /* Locate the .ttf file within your directory*/
+  }
+  
+
 header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-    padding: 0 11.5rem;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(58, 57, 57, 0.596) 100%);
+    
+    
+}
+.navbar, .banner{
+    width: 80%;
 }
 .navbar{
+
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,16 +37,79 @@ font-style: italic;
 }
 .nav-links{
     display: flex;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 2.5rem;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid rgba(255, 255, 255, 0.1); 
+   border-radius: 2.5rem; 
+
 }   
 .nav-item{
     list-style: none;
-    margin: 0 1.5rem;
+    margin: .25rem;
+    padding: .5rem 2rem;
+    
 }
 .nav-link{
     text-decoration: none;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 400;
     color: white;
+    
+}
+.nav-item span{
+    font-weight: 600;
+}
+.span{
+    border-radius: 2.9rem;
+    background: rgb(230, 83, 60);
+}
+
+.banner{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-title{
+    font-size: 4.8rem;
+font-weight: 900;
+color: white;
+}
+.banner-title span{
+    font-family: 'Miama', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1px;
+}
+.banner-description{
+    font-size: 1rem;
+font-weight: 400;
+color: rgba(255, 255, 255, 0.5);
+margin-top: 2rem;
+}
+.btn-banner{
+    margin-top: 2rem;
+}
+.btn-primary{
+    border-radius: 2.5rem;
+border: none;
+background: rgb(230, 83, 60);
+padding: 16px 40px 16px 40px;
+color: white;
+}
+
+.btn-download{
+background: none;
+border-radius: 2.5rem;
+border: 1px solid rgb(255, 255, 255);
+margin-left: 1rem;
+}
+.banner-image-container{
+    margin-top: 3rem;
+    margin-right: 1.5rem;
 }
