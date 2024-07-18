@@ -21,7 +21,7 @@ header {
 }
 
 .navbar,
-.banner {
+.banner, .change-habits-container {
     width: 80%;
 }
 
@@ -168,13 +168,13 @@ header {
 
 .box-1 h2 {
     color: white;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
 .box-1 p,
 .box-text p {
-    font-size: 13px;
+    font-size: .8rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.65);
 }
@@ -193,7 +193,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: .75rem;
 }
 
 .circle {
@@ -212,22 +212,79 @@ header {
 }
 
 .box-text h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     color: rgb(250, 250, 249);
 }
 
 
+/* Change You Habits Section */
 
+.change-habits{
+    background: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.change-habits-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+.change-habits-row1{
+    width: 60%;
+    margin-top: 5rem;
+    text-align: center;
+}
+.change-habits-row1 h1{
+    font-size: 3rem;
+font-weight: 900;
+    color: white;
+    margin-bottom: 1rem;
+}
+.change-habits-row1 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+font-weight: 400;
+margin-bottom: 3.5rem;
+}
 
-
+.change-habits-row2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.change-habits-row2-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.change-habits-row2-container img{
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-bottom: 2rem;
+}
+.change-habits-row2-container h4{
+    font-size: 1.2rem;
+font-weight: 600;
+color: white;
+margin-bottom: 0.5rem;
+}
+.change-habits-row2-container p{
+    color: rgba(255, 255, 255, 0.5);
+font-size: 1rem;
+font-weight: 400;
+text-align: center;
+}
 
 
 
 @media screen and (max-width: 576px) {
 
     .navbar,
-    .banner {
+    .banner, .change-habits-container {
         width: 90%;
     }
 
@@ -296,12 +353,12 @@ header {
     }
 
     .box-1 h2 {
-        font-size: 30px;
+        font-size: 1.8rem;
     }
 
     .box-1 p,
     .box-text p {
-        font-size: 9px;
+        font-size: .56rem;
     }
 
     .box-2 {
@@ -311,4 +368,25 @@ header {
         right: 145px;
         bottom: 203px;
     }
+
+
+    .change-habits-row1{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .change-habits-row1 h1{
+        font-size: 1.8rem;
+    font-weight: 900;
+    }
+
+    .change-habits-row1 p{
+        font-size: .8rem;
+        padding: 0 1rem;
+    }
+    .change-habits-row2{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
 }
