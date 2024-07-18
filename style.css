@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,19 +8,24 @@
 }
 
 @font-face {
-    font-family: 'Miama'; /* Name your font family */
-    src: url('Miama.ttf'); /* Locate the .ttf file within your directory*/
-  }
-  
-
-header{
-    background: linear-gradient(0.00deg, rgb(17, 17, 17),rgb(43, 42, 42) 100%);
-    
+    font-family: 'Miama';
+    /* Name your font family */
+    src: url('Miama.ttf');
+    /* Locate the .ttf file within your directory*/
 }
-.navbar, .banner{
+
+
+header {
+    background: linear-gradient(0.00deg, rgb(17, 17, 17), rgb(43, 42, 42) 100%);
+
+}
+
+.navbar,
+.banner {
     width: 80%;
 }
-.navbar{
+
+.navbar {
 
     margin: auto;
     display: flex;
@@ -28,121 +33,188 @@ header{
     align-items: center;
     padding-top: 3rem;
 }
-.navbar h3{
-    font-size: 2.1rem;
-font-weight: 800;
-color: rgb(230, 83, 60);
-font-style: italic;
-}
-.nav-links{
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   border: 1px solid rgba(255, 255, 255, 0.1); 
-   border-radius: 2.5rem; 
 
-}   
-.nav-item{
+.navbar h3 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.5rem;
+
+}
+
+.nav-item {
     list-style: none;
     margin: .25rem;
     padding: .5rem 2rem;
-    
+
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 400;
     color: white;
-    
+
 }
-.nav-item span{
+
+.nav-item span {
     font-weight: 600;
 }
-.span{
+
+.span {
     border-radius: 2.9rem;
     background: rgb(230, 83, 60);
 }
 
-.bars{
+.bars {
     display: none;
 }
 
 
 
 
-.banner{
+.banner {
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     margin: auto;
 }
-.banner-container{
+
+.banner-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4.8rem;
-font-weight: 900;
-color: white;
+    font-weight: 900;
+    color: white;
 
 }
-.banner-description{
+
+.banner-description {
     letter-spacing: 0.5px;
 }
-.banner-title span{
+
+.banner-title span {
     font-family: 'Miama', sans-serif;
     font-size: 5rem;
     font-weight: 400;
     line-height: 1px;
 }
-.banner-description{
+
+.banner-description {
     font-size: 1rem;
-font-weight: 400;
-color: rgba(255, 255, 255, 0.5);
-margin-top: 2rem;
-}
-.btn-banner{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
     margin-top: 2rem;
 }
-.btn-primary{
-    border-radius: 2.8rem;
-border: none;
-background: rgb(230, 83, 60);
-padding: 1rem 2.5rem;
-color: white;
+
+.btn-banner {
+    margin-top: 2rem;
 }
 
-.btn-download{
-background: none;
-border-radius: 2.2rem;
-border: 1px solid rgb(255, 255, 255);
-padding: .94rem 2.5rem;
-margin-left: 1rem;
+.btn-primary {
+    border-radius: 2.8rem;
+    border: none;
+    background: rgb(230, 83, 60);
+    padding: 1rem 2.5rem;
+    color: white;
 }
-.banner-image-container{
+
+.btn-download {
+    background: none;
+    border-radius: 2.2rem;
+    border: 1px solid rgb(255, 255, 255);
+    padding: .94rem 2.5rem;
+    margin-left: 1rem;
+}
+
+.banner-image-container {
     position: relative;
     margin-top: 3rem;
     margin-right: 1.5rem;
 }
-.banner-image-container img{
+
+.banner-image-container img {
     width: 100%;
 }
+
 .box-1 {
     width: 190px;
     height: 98px;
-    background-color: aqua;
     position: absolute;
     left: 218px;
     top: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
+
+.box-1 h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.box-1 p,
+.box-text p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
 .box-2 {
     width: 200px;
     height: 90px;
-    background-color: aqua;
     position: absolute;
     right: 252px;
     bottom: 72px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(230, 83, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circle i {
+    color: white;
+}
+
+.box-text h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(250, 250, 249);
 }
 
 
@@ -153,39 +225,52 @@ margin-left: 1rem;
 
 
 @media screen and (max-width: 576px) {
-    .navbar, .banner{
+
+    .navbar,
+    .banner {
         width: 90%;
     }
-    
-    .nav-links{
+
+    .navbar {
+        padding-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .nav-links {
         display: none;
     }
-    .bars{
+
+    .bars {
         display: block;
         color: white;
         font-size: 1.5rem;
     }
-    .banner{
+
+    .banner {
         /* border: 2px solid red; */
         display: flex;
         flex-direction: column;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 3rem;
-    font-weight: 800;
-    color: white;
+        font-weight: 800;
+        color: white;
     }
-    .banner-image-container{
+
+    .banner-image-container {
         margin: auto;
         margin-top: 3rem;
 
     }
-    .btn-banner{
+
+    .btn-banner {
         margin-top: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     .btn-primary {
         border-radius: 2.8rem;
         border: none;
@@ -193,27 +278,37 @@ margin-left: 1rem;
         padding: 1rem 1rem;
         color: white;
     }
-    .btn-download{
+
+    .btn-download {
         background: none;
         border-radius: 2.2rem;
         border: 1px solid rgb(255, 255, 255);
         padding: .94rem 1rem;
         margin-left: 1rem;
-        }
-        .box-1 {
-            width: 135px;
-            height: 74px;
-            background-color: aqua;
-            position: absolute;
-            left: 160px;
-            top: 25px;
-        }
-        .box-2 {
-            width: 145px;
-            height: 70px;
-            background-color: aqua;
-            position: absolute;
-            right: 145px;
-            bottom: 203px;
-        }
+    }
+
+    .box-1 {
+        width: 135px;
+        height: 74px;
+        position: absolute;
+        left: 160px;
+        top: 25px;
+    }
+
+    .box-1 h2 {
+        font-size: 30px;
+    }
+
+    .box-1 p,
+    .box-text p {
+        font-size: 9px;
+    }
+
+    .box-2 {
+        width: 145px;
+        height: 70px;
+        position: absolute;
+        right: 145px;
+        bottom: 203px;
+    }
 }
