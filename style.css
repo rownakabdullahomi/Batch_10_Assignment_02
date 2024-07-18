@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
-
+body{
+    background: black;
+}
 @font-face {
     font-family: 'Miama';
     /* Name your font family */
@@ -16,12 +18,12 @@
 
 
 header {
-    background: linear-gradient(0.00deg, rgb(17, 17, 17), rgb(43, 42, 42) 100%);
+    background: linear-gradient(0.00deg, rgb(7, 7, 7), rgb(27, 27, 27) 100%);
 
 }
 
 .navbar,
-.banner, .change-habits-container {
+.banner, .change-habits-container, .run-extra-container {
     width: 80%;
 }
 
@@ -221,10 +223,10 @@ header {
 /* Change You Habits Section */
 
 .change-habits{
-    background: rgb(17, 17, 17);
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .change-habits-container{
     display: flex;
@@ -278,6 +280,42 @@ font-size: 1rem;
 font-weight: 400;
 text-align: center;
 }
+
+
+/* Run Extra Section */
+
+.run-extra{
+    
+    margin-top: 7rem;
+}
+.run-extra-container{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    column-gap: 12rem;
+    border-radius: 18px;
+
+background: rgb(34, 34, 34);
+}
+.run-image img {
+    width: 340px;
+    height: 290px;
+    border-radius: 18px;
+    margin: 2rem;
+}
+.run-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 2.5rem;
+}
+
+
+
+
+
 
 
 
