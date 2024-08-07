@@ -28,7 +28,7 @@ header {
 .change-habits-container,
 .run-extra-container,
 .team-container,
-.foooter-section {
+.foooter-section, .creative-container {
     width: 80%;
     margin: auto;
 }
@@ -63,6 +63,11 @@ header {
     padding: .5rem 2rem;
 
 }
+.nav-item:hover{
+    border-radius: 2.9rem;
+    background: rgb(230, 83, 60);
+    
+}
 
 .nav-link {
     text-decoration: none;
@@ -80,6 +85,7 @@ header {
     border-radius: 2.9rem;
     background: rgb(230, 83, 60);
 }
+
 
 .bars {
     display: none;
@@ -538,6 +544,66 @@ input::placeholder {
     left: 5%;
 }
 
+/* Creative Section */
+.creative-container{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    margin-bottom: 5rem;
+}
+.creative-heading{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.creative-heading h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+}
+.creative-heading h2::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 90px;
+        height: 7px;
+        border-radius: 10px;
+        background-color: rgb(230, 83, 60);
+        transform: translateX(-50%);
+    
+}
+.creative-row{
+    display: flex;
+    margin-top: 3rem;
+    
+}
+.creative-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.img-box{
+    margin-bottom: 2rem;
+}
+.img-box img{
+    width: 4.2rem;
+    height: 4.2rem;
+    filter: brightness(80%);
+}
+
+.creative-box h3{
+    color: white;
+    margin-bottom: 1rem;
+    
+}
+.creative-box p{
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 3rem;
+}
+
+
 /* Footer Started */
 footer {
     background: rgba(255, 255, 255, 0.1);
@@ -617,6 +683,21 @@ hr {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
 
     .navbar,
@@ -624,7 +705,7 @@ hr {
     .change-habits-container,
     .run-extra-container,
     .team-container,
-    .foooter-section {
+    .foooter-section, .creative-container {
         width: 90%;
     }
 
@@ -880,6 +961,20 @@ hr {
 
     .copy-write {
         text-align: left;
+    }
+
+    /* Creative Section */
+    .creative-heading h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        
+    }
+    .creative-row {
+        flex-direction: column;
+    }
+    .creative-box p {
+        width: 70%;
+        margin: auto;
     }
 
 }
