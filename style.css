@@ -466,6 +466,9 @@ select {
     padding: .75rem 2.5rem .75rem 1.25rem;
     border: none;
 }
+option{
+    color: black;
+}
 
 input::placeholder {
     color: rgba(255, 255, 255, 0.6);
