@@ -124,7 +124,7 @@ header {
 
 .banner-title span {
     font-family: 'Miama', sans-serif;
-    font-size: 5rem;
+    font-size: 9rem;
     font-weight: 400;
     line-height: 1px;
 }
@@ -758,6 +758,9 @@ hr {
         font-size: 3rem;
         font-weight: 800;
         color: white;
+    }
+    .banner-title span{
+        font-size: 6rem;
     }
 
     .banner-description {
